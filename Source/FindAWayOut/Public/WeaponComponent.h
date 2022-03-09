@@ -30,8 +30,12 @@ public:
 	// ...
 	UWeaponComponent();
 
+	UFUNCTION(BlueprintCallable)
 	void StartFire();
+
+	UFUNCTION(BlueprintCallable)
 	void StopFire();
+	
 	void NextWeapon();
 	void Reload();
 
