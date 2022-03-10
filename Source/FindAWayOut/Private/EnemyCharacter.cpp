@@ -3,6 +3,7 @@
 
 #include "EnemyCharacter.h"
 #include "WeaponComponent.h"
+#include "BaseWeapon.h"
 
 // Sets default values
 AEnemyCharacter::AEnemyCharacter()

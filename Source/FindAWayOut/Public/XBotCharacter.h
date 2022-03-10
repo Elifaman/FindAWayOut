@@ -72,6 +72,7 @@ protected:
 		TSubclassOf<UUserWidget> XBotEnergyClass;
 		UUserWidget* XBotEnergyWidget;
 
+		UFUNCTION(BlueprintCallable)
 		void RestartGame();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "ZoomIn")
