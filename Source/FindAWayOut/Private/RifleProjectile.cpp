@@ -46,7 +46,15 @@ void ARifleProjectile::OnRifleProjectileHit(
 
 	MovementComponent->StopMovementImmediately();
 
-
+	UGameplayStatics::ApplyRadialDamage(GetWorld(),
+		DamageAmount,
+		GetActorLocation(),
+		DamageRadius,
+		UDamageType::StaticClass(),
+		{ GetOwner() },
+		this,
+		GetController(),
+		DoFullDamage);
 
 	UE_LOG(LogTemp, Warning, TEXT("HIT!!"));
 	DrawDebugSphere(GetWorld(), GetActorLocation(), DamageRadius, 24, FColor::Red, false, 5.0f);
